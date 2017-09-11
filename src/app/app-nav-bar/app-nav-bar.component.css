@@ -1,0 +1,68 @@
+
+.container-fluid {
+    background-color: #2F3133;
+    border-bottom-style : solid;
+    border-bottom-color: #0A0B0D;
+    border-bottom-width: 2px;
+    height: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #0F0E0E;
+    
+    
+
+}
+
+.logo img{
+    height: 50px;    
+    margin: 0px 40px 0px 0px;    
+    float: left; 
+    padding: 10px 0 0 0;
+}
+
+.logo img:hover {
+    height: 56px;    
+    margin: 0px 10px 0px 7px;    
+    float: left; 
+    margin-top: 1px;
+    padding: 0px;
+}
+
+.col-md-1 {
+    
+    font-size: 150%;
+    background-color: #444749;
+    border-radius: 10px; 
+    color : white;
+    display: inline-block;    
+    padding: 8px 15px 0 15px;
+    width: 130px;  
+    height: 50px;
+    margin-top: 5px; 
+    
+}
+
+.col-md-1:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 180%;
+    margin-top: 5px; 
+    padding: 5px 15px 25px 15px;
+    text-shadow: none;
+}
+
+.col-md-1:active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 180%;
+    margin-top: 5px;
+    opacity: 0.5;
+    padding: 5px 15px 25px 15px;
+    text-shadow: none;
+}
+
+.even {
+    background-color: #2F3133;
+    
+}

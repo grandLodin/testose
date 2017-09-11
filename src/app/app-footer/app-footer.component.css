@@ -1,0 +1,10 @@
+
+.col-md-1 {
+    text-align: center;
+    display: inline;
+}
+
+.col-md-1:hover {
+    color: white;
+    font-size: 130%;    
+}

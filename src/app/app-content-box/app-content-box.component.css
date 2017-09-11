@@ -1,0 +1,17 @@
+.box {
+    background-color: #2F3133;    
+    border-color: #090C0E;
+    border-style: solid;
+    border-width : 2px;
+    border-radius: 2px; 
+    box-shadow: 2px 2px 3px black;
+    height: 500px;
+    margin: 10px;
+    margin-right: 5px;
+    padding: 10px 20px;
+
+}
+
+input{
+    width: 200px ;
+}

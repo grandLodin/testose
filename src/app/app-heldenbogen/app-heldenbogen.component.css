@@ -1,0 +1,46 @@
+
+
+
+.row-name {
+    display: inline;  
+}
+
+.reihe {
+    background-color: red;
+ 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+margin: 14px 5px;
+}
+input {
+    padding: 2px;
+    width: 30px;
+}
+.app-label-main {
+    display: inline-block;
+    
+
+}
+.app-entry-main {
+    display: inline-block;
+}
+
+.app-input-main {
+    display: inline-block;
+}
+
+div.name {
+    margin: 10px 0;
+    
+}
+
+#name-input {
+
+    width: 100px;
+}

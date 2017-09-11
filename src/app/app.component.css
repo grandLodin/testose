@@ -1,0 +1,14 @@
+
+.wrapper {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-row:  auto;
+
+}
+
+/* @media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... } */
