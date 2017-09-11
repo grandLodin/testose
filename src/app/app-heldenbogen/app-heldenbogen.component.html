@@ -1,0 +1,40 @@
+<h4>Heldenbogen</h4>
+
+<div class="name">
+  <span class="row-name app-label">Namen:</span>
+  <span ><input type="text" style=" width: 200px; height:25px; display: inline-block" class = "form-control" [(ngModel)] ="name"></span>
+</div>
+
+<div class="Werte">
+  <ul class="app-label-main">
+    <li class="app-label">MU:</li>
+    <li class="app-label">KL:</li>
+    <li class="app-label">IN:</li>
+    <li class="app-label">CH:</li>
+    <li class="app-label">FF:</li>
+    <li class="app-label">GE:</li>
+    <li class="app-label">KO:</li>
+    <li class="app-label">KK:</li>
+  </ul>
+  <ul class="app-entry-main">
+      <li class="app-entry"> {{MU}} </li>
+      <li class="app-entry"> {{KL}} </li>
+      <li class="app-entry"> {{IN}} </li>
+      <li class="app-entry"> {{CH}} </li>
+      <li class="app-entry"> {{FF}} </li>
+      <li class="app-entry"> {{GE}} </li>
+      <li class="app-entry"> {{KO}} </li>
+      <li class="app-entry"> {{KK}} </li>
+  </ul>
+  <ul class="app-input-main">
+      <input type="text" class = "form-control" [(ngModel)] ="MU">
+      <input type="text" class = "form-control" [(ngModel)] ="KL">
+      <input type="text" class = "form-control" [(ngModel)] ="IN">
+      <input type="text" class = "form-control" [(ngModel)] ="CH">
+      <input type="text" class = "form-control" [(ngModel)] ="FF">
+      <input type="text" class = "form-control" [(ngModel)] ="GE">
+      <input type="text" class = "form-control" [(ngModel)] ="KO">
+      <input type="text" class = "form-control" [(ngModel)] ="KK">
+  </ul>
+<button class="btn button-primary" (click)="onSubmit()">Submit</button>
+  
