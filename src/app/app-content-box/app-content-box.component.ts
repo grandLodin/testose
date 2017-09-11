@@ -9,14 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class AppContentBoxComponent implements OnInit {
   name = 'Alrik';
   MU  = 12;
-  Testat = {};
+  Testat = false;
   Status = 'Bin sehr müde';
 
 
-  constructor() {    setTimeout(() => {
-    this.Testat = true;
-    }, 2000);
-
+  constructor() {
 
   }
 
@@ -25,10 +22,15 @@ export class AppContentBoxComponent implements OnInit {
 
   onStatus() {
     this.Status = 'Mein Name ist ' + this.name;
-  }
-  onUpdate(event: Event) {
-    this.name = (<HTMLInputElement>event.target).value;
+    this.Testat = true;
   }
 
+  detColor() {
+    if (!this.Testat) {
+      return 'red';
+    } else {
+      return 'green';
+    }
+  }
 }
 

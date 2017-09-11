@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-heldenbogen.component.css']
 })
 export class AppHeldenbogenComponent implements OnInit {
-  name = 'Alrik vom Fettwasserbach';
+  name = 'Alrik vom Fettwasserbachlauf';
   MU = 8;
   KL = 9;
   IN = 10;
@@ -15,17 +15,39 @@ export class AppHeldenbogenComponent implements OnInit {
   GE = 13;
   KO = 14;
   KK = 15;
+  edit_mode = false;
+  edit_label = 'Edit';
+
 
 
   constructor() { }
 
-
   ngOnInit() {
   }
 
+  onEdit() {
+    this.edit_mode = !this.edit_mode;
+    if (this.edit_mode) {
+      this.edit_label = 'Fertig';
+    } else {
+      this.edit_label = 'Edit';
+    }
+  }
 
   onSubmit() {
     console.log('es klappt');
+  }
+
+  toggleClassEntry () {
+    if (this.edit_mode) {
+      return 'hide';
+    }
+  }
+
+  toggleClassInput () {
+    if (!this.edit_mode) {
+      return 'hide';
+    }
   }
 
 }

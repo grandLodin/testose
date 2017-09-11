@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppContentBoxComponent } from '../app-content-box/app-content-box.component';
+// import { AppContentBoxComponent } from '../app-content-box/app-content-box.component';
 
 
 @Component({
@@ -8,24 +8,20 @@ import { AppContentBoxComponent } from '../app-content-box/app-content-box.compo
   styleUrls: ['./app-side-bar.component.css']
 })
 export class AppSideBarComponent implements OnInit {
-  Tot = false;
   edit_label = 'Bearbeiten';
-  edit = false;
+  edit_mode = false;
+
 
   constructor() {
-    setTimeout(() => {
-      this.Tot = true;
-      }, 2000);
     }
 
   ngOnInit() {
 
   }
   onEdit(event) {
-      this.edit = !this.edit;
-      if (this.edit) {
+      this.edit_mode = !this.edit_mode;
+      if (this.edit_mode) {
       this.edit_label = 'Fertig';
-      console.log(event);
     } else {
       this.edit_label = 'Bearbeiten';
     }
