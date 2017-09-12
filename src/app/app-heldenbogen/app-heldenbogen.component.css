@@ -44,3 +44,7 @@ div.name {
 
     width: 100px;
 }
+
+.edit {
+    display: none;
+}

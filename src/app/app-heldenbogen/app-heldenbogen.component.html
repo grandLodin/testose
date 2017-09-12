@@ -2,7 +2,15 @@
 
 <div class="name">
   <span class="row-name app-label">Namen:</span>
-  <span ><input type="text" style=" width: 200px; height:25px; display: inline-block" class = "form-control" [(ngModel)] ="name"></span>
+  <span [ngClass]="{edit: edit_mode}">
+    {{name}}
+  </span>
+  <span [ngClass]="{edit: !edit_mode}">
+    <input type="text" 
+    style=" width: 200px; height:25px; display: inline-block" 
+    class = "form-control"     
+    [(ngModel)] ="name">
+  </span>
 </div>
 
 <div class="Werte">
@@ -17,24 +25,24 @@
     <li class="app-label">KK:</li>
   </ul>
   <ul class="app-entry-main">
-      <li class="app-entry"> {{MU}} </li>
-      <li class="app-entry"> {{KL}} </li>
-      <li class="app-entry"> {{IN}} </li>
-      <li class="app-entry"> {{CH}} </li>
-      <li class="app-entry"> {{FF}} </li>
-      <li class="app-entry"> {{GE}} </li>
-      <li class="app-entry"> {{KO}} </li>
-      <li class="app-entry"> {{KK}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{MU}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{KL}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{IN}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{CH}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{FF}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{GE}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{KO}} </li>
+      <li class="app-entry" [ngClass]="{edit: edit_mode}"> {{KK}} </li>
   </ul>
   <ul class="app-input-main">
-      <input type="text" class = "form-control" [(ngModel)] ="MU">
-      <input type="text" class = "form-control" [(ngModel)] ="KL">
-      <input type="text" class = "form-control" [(ngModel)] ="IN">
-      <input type="text" class = "form-control" [(ngModel)] ="CH">
-      <input type="text" class = "form-control" [(ngModel)] ="FF">
-      <input type="text" class = "form-control" [(ngModel)] ="GE">
-      <input type="text" class = "form-control" [(ngModel)] ="KO">
-      <input type="text" class = "form-control" [(ngModel)] ="KK">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="MU">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="KL">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="IN">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="CH">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="FF">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="GE">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="KO">
+      <input type="text" class = "form-control" [ngClass]="{edit: !edit_mode}" [(ngModel)] ="KK">
   </ul>
   <br>
 <button class="btn button-primary" (click)="onEdit()">{{edit_label}}</button>

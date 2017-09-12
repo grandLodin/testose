@@ -16,7 +16,8 @@ export class AppHeldenbogenComponent implements OnInit {
   KO = 14;
   KK = 15;
   edit_mode = false;
-  edit_label = 'Edit';
+  edit_label = 'edit';
+  Helden = [];
 
 
 
@@ -38,17 +39,6 @@ export class AppHeldenbogenComponent implements OnInit {
     console.log('es klappt');
   }
 
-  toggleClassEntry () {
-    if (this.edit_mode) {
-      return 'hide';
-    }
-  }
-
-  toggleClassInput () {
-    if (!this.edit_mode) {
-      return 'hide';
-    }
-  }
 
 }
 

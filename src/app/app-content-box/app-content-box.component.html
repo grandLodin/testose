@@ -1,30 +1,29 @@
 
 <div class="box">
-
-  <!-- <p *ngIf="Testat; else noName" [ngStyle] ="{color: detColor()}">
-    Mein Name is {{ name }} und ich habe {{ MU }} Mut! Testat = {{Testat}}
-  </p>
-  <ng-template #noName>
-    <p [ngStyle] = "{color: detColor()}">
-      Kein Name bekannt
-    </p>
-  </ng-template>
-
-
-  <button class="btn btn-primary" (click)="onStatus()">
-    Status
-  </button>
   
-  <p>
-    {{Status}}
+  <label>
+    Helden Name
+  </label>
+  <input type="text" class ="form-control" [(ngModel)]="name">
+  
+    <button class="btn btn-primary" 
+    (click)="onStatus()">
+      Eintragen
+    </button>
+
+  <p [ngClass]="{hide: Testat}">
+    Mein Name is {{ name }} und ich habe {{ MU }} Mut! {{Testat}}
   </p>
 
-  <label>
-    Server Name
-  </label>
+  
+ <br>
+ <p *ngFor = "let i of myArray"
+ [ngStyle] = "{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+ [ngClass] = "{test: i >= 5}"
+ >
+   {{ i }}</p>
 
-  <input type="text" class ="form-control" [(ngModel)]="name"> -->
- 
-  <app-heldenbogen></app-heldenbogen> 
+
+  <!-- <app-heldenbogen></app-heldenbogen>  -->
 
 </div>

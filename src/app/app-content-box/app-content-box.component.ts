@@ -11,6 +11,10 @@ export class AppContentBoxComponent implements OnInit {
   MU  = 12;
   Testat = false;
   Status = 'Bin sehr müde';
+  myArray = [];
+  time = new Date;
+  logitem = this.myArray.length;
+  style = false;
 
 
   constructor() {
@@ -21,16 +25,10 @@ export class AppContentBoxComponent implements OnInit {
   }
 
   onStatus() {
-    this.Status = 'Mein Name ist ' + this.name;
-    this.Testat = true;
-  }
-
-  detColor() {
-    if (!this.Testat) {
-      return 'red';
-    } else {
-      return 'green';
+    this.myArray.push(this.myArray.length + 1);
+    this.Testat = !this.Testat;
     }
-  }
+
+
 }
 
